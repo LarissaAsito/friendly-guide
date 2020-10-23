@@ -3,15 +3,15 @@
 - a soma dos elementos do vetor
 - a media dos elementos do vetor*/
 #include <stdio.h>
-int vetor[10], maiornum=0;
+int v[10], maiornumero=0;
 
 int maior(int n)
 {
     if (n==0)
-        return maiornum;
-    else if (vetor[maiornum]<vetor[n])
+        return maiornumero;
+    else if (v[maiornumero]<v[n])
     {
-        maiornum=n;
+        maiornumero=n;
     }
     maior(n-1);
 }
@@ -24,8 +24,8 @@ void main()
     printf("\n Digite os elementos: ");
     for (cont=0;cont<i;cont++)
     {
-        scanf("%d%*c",&vetor[i]);
+        scanf("%d%*c",&v[i]);
     }
     maior(i--);
-    printf("Maior num, com indice %d e eh %d",maiornum,vetor[maiornum]);
+    printf("Maior num, com indice %d e eh %d",maiornumero,v[maiornumero]);
 }
