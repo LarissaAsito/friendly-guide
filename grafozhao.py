@@ -14,7 +14,7 @@ PI = 0.9        #probabilidade de conexão intra-comunidade
 PO = 0.1        #probabilidade de conexão inter-comunidade
 
 # criação do vetor
-vertices = np.arange(0,N)
+vert = np.arange(0,N)
 
 # criação da matriz adjacência zerada
 adjMatriz = np.zeros((N,N), dtype = float)
@@ -31,10 +31,10 @@ while (r < K):
     nroVertices = int(N/M)                      # quantidade de vértices na comunidade
 
     # escolha de um vetor
-    firstVertice = choice(vertices[comunidadeAleatoria*nroVertices:((comunidadeAleatoria+1)*nroVertices)])
+    firstVertice = choice(vert[comunidadeAleatoria*nroVertices:((comunidadeAleatoria+1)*nroVertices)])
 
     # escolha de um outro vetor
-    secondVertice = choice(vertices[comunidadeAleatoria*nroVertices:((comunidadeAleatoria+1)*nroVertices)])
+    secondVertice = choice(vert[comunidadeAleatoria*nroVertices:((comunidadeAleatoria+1)*nroVertices)])
 
     # criação de uma probabilidade de conexão
     probabilidadePi = float((sample(list(range(0, 100)),1))[0])
