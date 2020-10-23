@@ -3,20 +3,20 @@
 programação C para funções matemáticas básicas.*/
 main()
 {
-	int num1, num2, num3, num4, num5, opcao, p1, p2, p3, p4, p5, pesos, maior, menor;   /*essas foram as variáveis utilizadas durante o programa*/
+	int n1, n2, n3, n4, n5, opcao, p1, p2, p3, p4, p5, pesos, maior, menor;   /*essas foram as variáveis utilizadas durante o programa*/
 	float soma, media, x, y, z, w, t, A, B, C, D, E, d1, d2, desvio;
 	
 	printf("insira 5 numeros para realizar as operacoes. \n"); /*foi pedido que o usuário insira cinco números*/
 	printf("Primeiro numero: ");
-	scanf("%d", &num1);
+	scanf("%d", &n1);
 	printf("Segundo numero: ");
-	scanf("%d", &num2);
+	scanf("%d", &n2);
 	printf("Terceiro numero: ");
-	scanf("%d", &num3);
+	scanf("%d", &n3);
 	printf("Quarto numero: ");
-	scanf("%d", &num4);
+	scanf("%d", &n4);
 	printf("Quinto numero: ");
-	scanf("%d", &num5);
+	scanf("%d", &n5);
 	
 
 	
@@ -34,31 +34,31 @@ main()
 	switch (opcao) /*Switch/case é uma estrutura de condição que define o código a ser executado*/
 	{
 		case 1: /*média simples*/
-			soma = num1+num2+num3+num4+num5;
+			soma = n1+n2+n3+n4+n5;
 			printf("o resultado da media aritmetica simples: %f \n", soma/5);
 			system("pause"); /*usado para não deixar um teste fechar imediatamente*/
 		break; /*usado para encerrar o programa*/
 		
 		case 2: /*média ponderada*/
-			printf("primeiro valor digitado: %d", num1);    printf("   insira o peso: "); scanf("%d", &p1);
-			printf("segundo valor digitado: %d", num2);     printf("   insira o peso: "); scanf("%d", &p2);
-			printf("terceiro valor digitado: %d", num3);    printf("   insira o peso: "); scanf("%d", &p3);
-			printf("quarto valor digitado: %d", num4);      printf("   insira o peso: "); scanf("%d", &p4);
-			printf("quinto valor digitado: %d", num5);      printf("   insira o peso: "); scanf("%d", &p5);
-			soma = num1*p1 + num2*p2 + num3*p3 + num4*p4 + num5*p5;
+			printf("primeiro valor digitado: %d", n1);    printf("   insira o peso: "); scanf("%d", &p1);
+			printf("segundo valor digitado: %d", n2);     printf("   insira o peso: "); scanf("%d", &p2);
+			printf("terceiro valor digitado: %d", n3);    printf("   insira o peso: "); scanf("%d", &p3);
+			printf("quarto valor digitado: %d", n4);      printf("   insira o peso: "); scanf("%d", &p4);
+			printf("quinto valor digitado: %d", n5);      printf("   insira o peso: "); scanf("%d", &p5);
+			soma = n1*p1 + n2*p2 + n3*p3 + n4*p4 + n5*p5;
 			pesos = p1 + p2 + p3 + p4 + p5;
 			printf("o resultado da media ponderada: %f \n", soma/pesos);
 			system("pause"); /*usado para não deixar um teste fechar imediatamente*/
 		break; /*usado para encerrar o programa*/
 		
 		case 3: /*desvio padrão*/
-			soma = num1 + num2 + num3 + num4 + num5;
+			soma = n1 + n2 + n3 + n4 + n5;
 			media= soma/5;
-			x = num1 - media; 
-			y = num2 - media;
-			z = num3 - media;
-			w = num4 - media;
-			t = num5 - media;
+			x = n1 - media; 
+			y = n2 - media;
+			z = n3 - media;
+			w = n4 - media;
+			t = n5 - media;
 			A = pow (x, 2);
 			B = pow (y, 2);
 			C = pow (z, 2);
@@ -73,52 +73,52 @@ main()
 			
 			
 		case 4: /*maior valor*/
-            maior = num1;
-            menor = num1;
-            if (num2 < menor)
-                menor = num2;
-            if (num2 > maior)
-                maior = num2;
-            if (num3 < menor)
-                menor = num3;
-            if (num3 > maior)
-                maior = num3;
-            if (num4 < menor)
-                menor = num4;
-            if (num4 > maior)
-                maior = num4;
-            if (num5 > maior)
-                maior = num5;
-            if (num5 > maior)
-                maior = num5;
+            maior = n1;
+            menor = n1;
+            if (n2 < menor)
+                menor = n2;
+            if (n2 > maior)
+                maior = n2;
+            if (n3 < menor)
+                menor = n3;
+            if (n3 > maior)
+                maior = n3;
+            if (n4 < menor)
+                menor = n4;
+            if (n4 > maior)
+                maior = n4;
+            if (n5 > maior)
+                maior = n5;
+            if (n5 > maior)
+                maior = n5;
             printf ("O Maior valor digitado foi: %d \n", maior);
             system("pause"); /*usado para não deixar um teste fechar imediatamente*/
         break; /*usado para encerrar o programa*/
 
         case 5: /*menor valor*/
-            maior = num1;
-            menor = num1;
-            if (num2 < menor)
-                menor = num2;
-            if (num2 > maior)
-                maior = num2;
-            if (num3 < menor)
-                menor = num3;
-            if (num3 > maior)
-                maior = num3;
-            if (num4 < menor)
-                menor = num4;
-            if (num4 > maior)
-                maior = num4;
-            if (num5 > maior)
-                maior = num5;
-            if (num5 > maior)
-                maior = num5;
+            maior = n1;
+            menor = n1;
+            if (n2 < menor)
+                menor = n2;
+            if (n2 > maior)
+                maior = n2;
+            if (n3 < menor)
+                menor = n3;
+            if (n3 > maior)
+                maior = n3;
+            if (n4 < menor)
+                menor = n4;
+            if (n4 > maior)
+                maior = n4;
+            if (n5 > maior)
+                maior = n5;
+            if (n5 > maior)
+                maior = n5;
             printf ("O Menor valor digitado foi: %d \n", menor);
             system("pause"); /*usado para não deixar um teste fechar imediatamente*/
         break; /*usado para encerrar o programa*/
 		case 6: 
-			printf("mostrar os valores inseridos: \n %d\n %d\n %d\n %d\n %d\n", num1,num2,num3,num4,num5); 
+			printf("mostrar os valores inseridos: \n %d\n %d\n %d\n %d\n %d\n", n1,n2,n3,n4,n5); 
 			system("pause"); /*usado para não deixar um teste fechar imediatamente*/
         break; /*usado para encerrar o programa*/
 		
