@@ -73,7 +73,7 @@ while (r < K):
     print(f"O Grau Médio é {(r)}")
 
 print ('___________________________________________________________________________________________________________')
-print ('MATRIZ ADJACÊNCIA')
+print ('MATRIZ ADJACENCIA')
 print ('')
 for linha in adjMatriz: # mostra a matriz adjacência
     print(linha)
