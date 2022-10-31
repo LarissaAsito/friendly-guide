@@ -1,13 +1,13 @@
-#include <stdio.h> 		// biblioteca padr„o da linguagem C.
-#include <stdlib.h>	   // Necess·rio para a funÁ„o random
-#include <time.h>     // Necessario para "time" da funÁ„o random
+#include <stdio.h> 		// biblioteca padr√£o da linguagem C.
+#include <stdlib.h>	   // Necess√°rio para a fun√ß√£o random
+#include <time.h>     // Necessario para "time" da fun√ß√£o random
 
 int main () {
 	
 	int palpite, tentativa, sorteado;
 	
-	srand( (unsigned)time(NULL) ); 			// srand È respons·vel por, cada vez que abrir o programa, garantir que o numero sorteado seja diferente do sorteado anteriormente.
-	sorteado = rand()%100;				   // a FunÁ„o rand ir· sortear aleatoriamente um n˙mero entre 0 e 100 e armazenar· na vari·vel "sorteado"
+	srand( (unsigned)time(NULL) ); 			// srand √© respons√°vel por, cada vez que abrir o programa, garantir que o numero sorteado seja diferente do sorteado anteriormente.
+	sorteado = rand()%100;				   // a Fun√ß√£o rand ir√° sortear aleatoriamente um n√∫mero entre 0 e 100 e armazenar√° na vari√°vel "sorteado"
 	
 
 	printf ("\n                     USP - UNIVERSIDADE DE SAO PAULO");
@@ -16,10 +16,10 @@ int main () {
 	printf ("\nTente adivinhar o numero sorteado pelo computador.");
 	printf ("\nNumero sorteado entre 0 e 100.");
 	
-		printf ("\n\nDigite um numero: ");
+		printf ("\n\nDigite algum numero: ");
 		scanf ("%d", &palpite); 			// Solicita palpite inicial do usuario
-		tentativa = 1; 					   // Atribuimos o valor inicial 1 para a vari·vel TENTATIVA para representar a primeira tentativa de acertar o numero sorteado.
-	do { 								  // do-while foi utilizado para repetir toda a estrutura do programa para que o usu·rio continue tentando adivinhar o numero
+		tentativa = 1; 					   // Atribuimos o valor inicial 1 para a vari√°vel TENTATIVA para representar a primeira tentativa de acertar o numero sorteado.
+	do { 								  // do-while foi utilizado para repetir toda a estrutura do programa para que o usu√°rio continue tentando adivinhar o numero
 		if ( palpite > sorteado ) {
 			printf ("\nO numero sorteado e MENOR que %d", palpite);
 			printf ("\nTente novamente: ");
