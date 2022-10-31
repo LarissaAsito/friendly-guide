@@ -27,5 +27,5 @@ void main()
         scanf("%d%*c",&v[i]);
     }
     maior(i--);
-    printf("Maior num, com indice %d e eh %d",maiornumero,v[maiornumero]);
+    printf("Maior numero, com indice %d e eh %d",maiornumero,v[maiornumero]);
 }
