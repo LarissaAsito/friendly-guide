@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 main(){
 	int vet[8], positivo[8], negativo[8], i;
 	int cont_p=0;
@@ -11,7 +11,7 @@ main(){
 	}
 	printf("Entre com 8 digitos:\n");
 	for(i=0; i<8; i++){
-		printf("%d� :", i+1);
+		printf("%dº :", i+1);
 		scanf("%d", &vet[i]);
 		
 		if(vet[i]>=0){
@@ -33,7 +33,7 @@ main(){
 	}
 	
 	if(cont_n==0){
-		printf("\nNao foram inseridos numeros negativos.");
+		printf("\nNão foram inseridos números negativos");
 	}else{
 		printf("Os valores negativos sao: \n");
 		for(i=0; i<cont_n; i++){
